@@ -1,5 +1,5 @@
 ---
-title: System time
+title: System time Arch Linux
 date: 2022-04-28 20:27:00 +0700
 categories: [Arch Linux]
 ---
