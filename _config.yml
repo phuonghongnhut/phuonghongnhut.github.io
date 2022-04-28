@@ -89,7 +89,7 @@ avatar:
 toc: true
 
 comments:
-  active:         # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
+  active:  disqus       # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
   # The active options are as follows:
   disqus:
     shortname: 'hongnhut-1'  # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
@@ -198,8 +198,8 @@ jekyll-archives:
     tag: /tags/:name/
     category: /categories/:name/
 # Disqus Comments
-disqus:
-    # Leave shortname blank to disable comments site-wide.
-    # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
-    shortname: 'hongnhut-1'
-    comments: true  # boolean type, the global switch for posts comments.
+# disqus:
+#     # Leave shortname blank to disable comments site-wide.
+#     # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
+#     shortname: 'hongnhut-1'
+#     comments: true  # boolean type, the global switch for posts comments.
