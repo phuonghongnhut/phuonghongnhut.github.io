@@ -1,7 +1,9 @@
 ---
 title: Markdown Symbols
+author: Phương Hồng Nhựt
 date: 2022-04-28 20:54:00 +0700
 categories: [Markdown]
+tags: [Math]
 math: true
 ---
 

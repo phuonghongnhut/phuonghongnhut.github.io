@@ -1,5 +1,6 @@
 ---
-title: System time Arch Linux
+title: Arch Linux System Time 
+author: Phương Hồng Nhựt
 date: 2022-04-28 20:27:00 +0700
 categories: [Arch Linux]
 ---
