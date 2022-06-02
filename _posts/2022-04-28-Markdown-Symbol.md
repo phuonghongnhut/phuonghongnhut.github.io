@@ -83,6 +83,8 @@ math: true
 | $\lim_{x \to 3^{-3}} (- \frac{4x}{x - 3})$ | \lim_{x \to 3^{-3}} (- \frac{4x}{x - 3}) |
 | $\lim_{x\to\infty} f(x)$                   | \lim_{x\to\infty} f(x)                   |
 | $\sum_{n=1}^{\infty}2^{-n} = 1$            | \sum_{n=1}^{\infty}2^{-n} = 1            |
+| $\sqrt[n]{x}$                              | \sqrt[n]{x}                              |
+
 
 ## Tham khảo
 
