@@ -1,0 +1,17 @@
+[data-md-color-scheme="slate"] {
+  --md-hue: 210; /* [0, 360] */
+}
+
+@font-face {
+  font-family: "Iosevka";
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/iosevka/iosevka-regular.ttf');
+}
+
+@font-face {
+  font-family: "Iosevka";
+  font-style: italic;
+  font-weight: 400;
+  src: url('../fonts/iosevka/iosevka-italic.ttf');
+}
