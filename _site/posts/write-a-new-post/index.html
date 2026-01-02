@@ -14,7 +14,7 @@
 
 
 <!-- `site.alt_lang` can specify a language different from the UI -->
-<html lang="en" >
+<html lang="en" data-mode="light">
   <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f7f7f7">
@@ -37,22 +37,22 @@
 <meta property="og:description" content="This tutorial will guide you how to write a post in the Chirpy template, and it’s worth reading even if you’ve used Jekyll before, as many features require specific variables to be set." />
 <link rel="canonical" href="http://localhost:4000/posts/write-a-new-post/" />
 <meta property="og:url" content="http://localhost:4000/posts/write-a-new-post/" />
-<meta property="og:site_name" content="Chirpy" />
+<meta property="og:site_name" content="Think" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-08-08T14:10:00+08:00" />
+<meta property="article:published_time" content="2019-08-08T13:10:00+07:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Writing a New Post" />
-<meta name="twitter:site" content="@twitter_username" />
+<meta name="twitter:site" content="@nhut_phuonghong" />
 <meta name="twitter:creator" content="@cotes2020" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Cotes Chung","url":"https://github.com/cotes2020/"},"dateModified":"2025-09-09T03:45:20+08:00","datePublished":"2019-08-08T14:10:00+08:00","description":"This tutorial will guide you how to write a post in the Chirpy template, and it’s worth reading even if you’ve used Jekyll before, as many features require specific variables to be set.","headline":"Writing a New Post","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/write-a-new-post/"},"url":"http://localhost:4000/posts/write-a-new-post/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Cotes Chung","url":"https://github.com/cotes2020/"},"dateModified":"2025-09-09T02:45:20+07:00","datePublished":"2019-08-08T13:10:00+07:00","description":"This tutorial will guide you how to write a post in the Chirpy template, and it’s worth reading even if you’ve used Jekyll before, as many features require specific variables to be set.","headline":"Writing a New Post","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/write-a-new-post/"},"url":"http://localhost:4000/posts/write-a-new-post/"}</script>
 <!-- End Jekyll SEO tag -->
 
     <!-- Fediverse handle/creator -->
     <meta name="fediverse:creator" content="@you@domain.com">
   
 
-  <title>Writing a New Post | Chirpy</title>
+  <title>Writing a New Post | Think</title>
 
   <!--
   The Favicons for Web, Android, Microsoft, and iOS (iPhone and iPad) Apps
@@ -255,8 +255,8 @@
   <header class="profile-wrapper">
     <a href="/" id="avatar" class="rounded-circle"><img src="https://chirpy-img.netlify.app/commons/avatar.jpg" width="112" height="112" alt="avatar" onerror="this.style.display='none'"></a>
 
-    <a class="site-title d-block" href="/">Chirpy</a>
-    <p class="site-subtitle fst-italic mb-0">A text-focused Jekyll theme</p>
+    <a class="site-title d-block" href="/">Think</a>
+    <p class="site-subtitle fst-italic mb-0">Viết để hiểu, viết để nghĩ</p>
   </header>
   <!-- .profile-wrapper -->
 
@@ -316,20 +316,12 @@
 
   <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100">
     
-      <button type="button" class="btn btn-link nav-link" aria-label="Switch Mode" id="mode-toggle">
-        <i class="fas fa-adjust"></i>
-      </button>
-
-      
-        <span class="icon-border"></span>
-      
-    
 
     
 
       
         <a
-          href="https://github.com/github_username"
+          href="https://github.com/phuonghongnhut"
           aria-label="github"
           
 
@@ -351,7 +343,7 @@
 
       
         <a
-          href="https://twitter.com/twitter_username"
+          href="https://twitter.com/nhut_phuonghong"
           aria-label="twitter"
           
 
@@ -1054,7 +1046,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="2181 words"
+  title="2182 words"
 >
   <em>12 min</em> read</span>
 
@@ -1092,7 +1084,7 @@
 
 <h2 id="naming-and-path"><span class="me-2">Naming and Path</span><a href="#naming-and-path" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<p>Create a new file named <code class="language-plaintext filepath highlighter-rouge">YYYY-MM-DD-TITLE.EXTENSION</code> and put it in the <code class="language-plaintext filepath highlighter-rouge">_posts</code> of the root directory. Please note that the <code class="language-plaintext filepath highlighter-rouge">EXTENSION</code> must be one of <code class="language-plaintext filepath highlighter-rouge">md</code> and <code class="language-plaintext filepath highlighter-rouge">markdown</code>. If you want to save time of creating files, please consider using the plugin <a href="https://github.com/jekyll/jekyll-compose"><code class="language-plaintext highlighter-rouge">Jekyll-Compose</code></a> to accomplish this.</p>
+<p>Create a new file named <code class="language-plaintext filepath highlighter-rouge">YYYY-MM-DD-TITLE.EXTENSION</code> and put it in the <code class="language-plaintext filepath highlighter-rouge">_posts</code> of the root directory. Please note that the <code class="language-plaintext filepath highlighter-rouge">EXTENSION</code> must be one of <code class="language-plaintext filepath highlighter-rouge">md</code> and <code class="language-plaintext filepath highlighter-rouge">markdown</code>. If you want to save time of creating files, please consider using the plugin <a href="https://github.com/jekyll/jekyll-compose"><code class="language-plaintext highlighter-rouge">Jekyll-Compose</code></a> to accomplish this. ok</p>
 
 <h2 id="front-matter"><span class="me-2">Front Matter</span><a href="#front-matter" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
@@ -1855,21 +1847,21 @@ If you are building the site via <code class="language-plaintext highlighter-rou
 
       
 
-      <a href="https://twitter.com/intent/tweet?text=Writing%20a%20New%20Post%20-%20Chirpy&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fwrite-a-new-post%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+      <a href="https://twitter.com/intent/tweet?text=Writing%20a%20New%20Post%20-%20Think&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fwrite-a-new-post%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
         <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
     
 
       
 
-      <a href="https://www.facebook.com/sharer/sharer.php?title=Writing%20a%20New%20Post%20-%20Chirpy&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fwrite-a-new-post%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?title=Writing%20a%20New%20Post%20-%20Think&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fwrite-a-new-post%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
         <i class="fa-fw fab fa-facebook-square"></i>
       </a>
     
 
       
 
-      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fwrite-a-new-post%2F&text=Writing%20a%20New%20Post%20-%20Chirpy" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fwrite-a-new-post%2F&text=Writing%20a%20New%20Post%20-%20Think" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
         <i class="fa-fw fab fa-telegram"></i>
       </a>
     
@@ -2191,7 +2183,7 @@ If you are building the site via <code class="language-plaintext highlighter-rou
   data-df="ll"
   
 >
-  Aug 11, 2019
+  Aug 10, 2019
 </time>
 
               <h4 class="pt-0 my-2">Customize the Favicon</h4>
@@ -2503,6 +2495,62 @@ If you are building the site via <code class="language-plaintext highlighter-rou
     
       
       <!-- The comments switcher -->
+
+  
+  <!-- https://giscus.app/ -->
+<script>
+  (function () {
+    const themeMapper = Theme.getThemeMapper('light', 'dark_dimmed');
+    const initTheme = themeMapper[Theme.visualState];
+
+    let lang = 'en';if (lang.length > 2 && !lang.startsWith('zh')) {
+      lang = lang.slice(0, 2);
+    }
+
+    let giscusAttributes = {
+      src: 'https://giscus.app/client.js',
+      'data-repo': 'phuonghongnhut/phuonghongnhut.github.io',
+      'data-repo-id': 'R_kgDOQyU8BA',
+      'data-category': 'Announcements',
+      'data-category-id': 'DIC_kwDOQyU8BM4C0e4_',
+      'data-mapping': 'pathname',
+      'data-strict' : '0',
+      'data-reactions-enabled': '1',
+      'data-emit-metadata': '0',
+      'data-theme': initTheme,
+      'data-input-position': 'bottom',
+      'data-lang': lang,
+      'data-loading': 'lazy',
+      crossorigin: 'anonymous',
+      async: ''
+    };
+
+    let giscusNode = document.createElement('script');
+    Object.entries(giscusAttributes).forEach(([key, value]) =>
+      giscusNode.setAttribute(key, value)
+    );
+
+    const $footer = document.querySelector('footer');
+    $footer.insertAdjacentElement("beforebegin", giscusNode);
+
+    addEventListener('message', (event) => {
+      if (event.source === window && event.data && event.data.id === Theme.ID) {
+        const newTheme = themeMapper[Theme.visualState];
+
+        const message = {
+          setConfig: {
+            theme: newTheme
+          }
+        };
+
+        const giscus =
+          document.getElementsByClassName('giscus-frame')[0].contentWindow;
+        giscus.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+    });
+  })();
+</script>
+
 
 
     
