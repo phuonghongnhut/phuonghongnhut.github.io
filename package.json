@@ -10,8 +10,12 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/markdown-satteri": "^0.4.4",
     "@astrojs/starlight": "^0.42.6",
-    "astro": "^7.2.10",
-    "sharp": "^0.35.3"
+    "@fontsource/iosevka": "^5.3.0",
+    "astro": "^7.4.1",
+    "katex": "^0.19.0",
+    "sharp": "^0.35.3",
+    "starlight-theme-flexoki": "^0.3.0"
   }
 }
