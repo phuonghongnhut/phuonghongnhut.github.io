@@ -16,14 +16,16 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			plugins: [starlightThemeFlexoki({ accentColor: 'orange' })],
-			title: 'My Docs',
+			title: 'Hồng Nhựt',
+			components: {
+				Footer: './src/components/Footer.astro',
+			},
 			customCss: ['./src/styles/fonts.css', 'katex/dist/katex.min.css'],
 			expressiveCode: {
 				styleOverrides: {
 					codeFontFamily: '"Iosevka", ui-monospace, monospace',
 				},
 			},
-			tableOfContents: false,
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
 			sidebar: [
 				{
