@@ -17,6 +17,12 @@ export default defineConfig({
 		starlight({
 			plugins: [starlightThemeFlexoki({ accentColor: 'orange' })],
 			title: 'Hồng Nhựt',
+			head: [
+				{
+				  tag: 'script',
+				  content: `try{if(localStorage.getItem('starlight-theme')===null)localStorage.setItem('starlight-theme','dark')}catch(e){}`,
+				},
+			  ],
 			components: {
 				Footer: './src/components/Footer.astro',
 			},
@@ -26,38 +32,49 @@ export default defineConfig({
 					codeFontFamily: '"Iosevka", ui-monospace, monospace',
 				},
 			},
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/phuonghongnhut' }],
+			social: [
+				{ icon: 'github', label: 'GitHub', href: 'https://github.com/phuonghongnhut' },
+				{ icon: 'blueSky', label: 'BlueSky', href: 'https://hongnhut.bsky.social' },
+				{ icon: 'x.com', label: 'X', href: 'https://x.com/nhut_phuonghong' },
+			],
 			sidebar: [
 				{
 					label: 'Start Here',
 					items: [
 						{ label: 'Getting Started', slug: 'index' },
-						{ label: 'Manual Setup', slug: 'manual-setup' },
+						// { label: 'Manual Setup', slug: 'manual-setup' },
 					],
 				},
 				{
-					label: 'Guides',
+					label: 'LLM',
 					items: [
-						{ label: 'Pages', slug: 'guides/pages' },
-						{ label: 'Authoring', slug: 'guides/authoring' },
-						{ label: 'Components', slug: 'guides/components' },
-						{ label: 'CSS and Styling', slug: 'guides/css-and-styling' },
-						{ label: 'Project Structure', slug: 'guides/project-structure' },
-						{ label: 'Sidebar', slug: 'guides/sidebar' },
-						{ label: 'Search', slug: 'guides/site-search' },
+						{ label: 'Tokens', slug: 'llm/tokens' },
+						// { label: 'Manual Setup', slug: 'manual-setup' },
 					],
-				},
-				{
-					label: 'Reference',
-					items: [
-						{ label: 'Configuration', slug: 'reference/configuration' },
-						{ label: 'Frontmatter', slug: 'reference/frontmatter' },
-					],
-				},
-				{
-					label: 'Resources',
-					items: [{ label: 'Plugins', slug: 'resources/plugins' }],
-				},
+				}
+				// {
+				// 	label: 'Guides',
+				// 	items: [
+				// 		{ label: 'Pages', slug: 'guides/pages' },
+				// 		{ label: 'Authoring', slug: 'guides/authoring' },
+				// 		{ label: 'Components', slug: 'guides/components' },
+				// 		{ label: 'CSS and Styling', slug: 'guides/css-and-styling' },
+				// 		{ label: 'Project Structure', slug: 'guides/project-structure' },
+				// 		{ label: 'Sidebar', slug: 'guides/sidebar' },
+				// 		{ label: 'Search', slug: 'guides/site-search' },
+				// 	],
+				// },
+				// {
+				// 	label: 'Reference',
+				// 	items: [
+				// 		{ label: 'Configuration', slug: 'reference/configuration' },
+				// 		{ label: 'Frontmatter', slug: 'reference/frontmatter' },
+				// 	],
+				// },
+				// {
+				// 	label: 'Resources',
+				// 	items: [{ label: 'Plugins', slug: 'resources/plugins' }],
+				// },
 			],
 		}),
 	],
