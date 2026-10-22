@@ -72,6 +72,6 @@ Các bộ tách từ dựa trên quy tắc sử dụng những quy tắc đượ
 ### Tokenizer cho tiếng Việt
 ### Token ảnh hưởng thế nào đến:
     - Chi phí
-    - Tốc độ
+    - Tốc độ ok
     - Context window
     - Chất lượng câu trả lời
