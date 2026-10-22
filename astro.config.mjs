@@ -26,7 +26,7 @@ export default defineConfig({
 					codeFontFamily: '"Iosevka", ui-monospace, monospace',
 				},
 			},
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/phuonghongnhut' }],
 			sidebar: [
 				{
 					label: 'Start Here',
