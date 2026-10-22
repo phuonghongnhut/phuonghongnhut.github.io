@@ -6,4 +6,36 @@
 :root {
 	--sl-font: 'Iosevka', ui-monospace, monospace;
 	--sl-font-mono: 'Iosevka', ui-monospace, monospace;
+
+	--sl-text-h4: 1.0625rem;
+	--sl-line-height: 1.6;
+	--sl-line-height-headings: 1.25;
+}
+
+body {
+	font-size: 0.9375rem;
+}
+
+/* Flexoki grows article type with the viewport, up to 20px. Keep a fixed Iosevka scale. */
+.content-panel {
+	--sl-flexoki-text-base: 0.9375rem;
+	--sl-text-base: 0.9375rem;
+	--sl-text-body: 0.9375rem;
+	--sl-text-h1: 1.625rem;
+	--sl-text-h2: 1.3125rem;
+	--sl-text-h3: 1.125rem;
+	--sl-text-h4: 1rem;
+	--sl-text-h5: 0.9375rem;
+}
+
+.sl-markdown-content
+	:not(a, strong, em, del, span, input, code, br)
+	+ :not(a, strong, em, del, span, input, code, br, :where(.not-content *)) {
+	margin-top: 0.7em;
+}
+
+.sl-markdown-content
+	:not(h1, h2, h3, h4, h5, h6, .sl-heading-wrapper)
+	+ :is(h1, h2, h3, h4, h5, h6, .sl-heading-wrapper):not(:where(.not-content *)) {
+	margin-top: 1.35em;
 }

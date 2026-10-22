@@ -41,32 +41,39 @@ export default defineConfig({
 					label: 'Start Here',
 					items: [
 						{ label: 'Getting Started', slug: 'index' },
-						{ label: 'Manual Setup', slug: 'manual-setup' },
+						// { label: 'Manual Setup', slug: 'manual-setup' },
 					],
 				},
 				{
-					label: 'Guides',
+					label: 'LLM',
 					items: [
-						{ label: 'Pages', slug: 'guides/pages' },
-						{ label: 'Authoring', slug: 'guides/authoring' },
-						{ label: 'Components', slug: 'guides/components' },
-						{ label: 'CSS and Styling', slug: 'guides/css-and-styling' },
-						{ label: 'Project Structure', slug: 'guides/project-structure' },
-						{ label: 'Sidebar', slug: 'guides/sidebar' },
-						{ label: 'Search', slug: 'guides/site-search' },
+						{ label: 'Tokens', slug: 'llm/tokens' },
+						// { label: 'Manual Setup', slug: 'manual-setup' },
 					],
-				},
-				{
-					label: 'Reference',
-					items: [
-						{ label: 'Configuration', slug: 'reference/configuration' },
-						{ label: 'Frontmatter', slug: 'reference/frontmatter' },
-					],
-				},
-				{
-					label: 'Resources',
-					items: [{ label: 'Plugins', slug: 'resources/plugins' }],
-				},
+				}
+				// {
+				// 	label: 'Guides',
+				// 	items: [
+				// 		{ label: 'Pages', slug: 'guides/pages' },
+				// 		{ label: 'Authoring', slug: 'guides/authoring' },
+				// 		{ label: 'Components', slug: 'guides/components' },
+				// 		{ label: 'CSS and Styling', slug: 'guides/css-and-styling' },
+				// 		{ label: 'Project Structure', slug: 'guides/project-structure' },
+				// 		{ label: 'Sidebar', slug: 'guides/sidebar' },
+				// 		{ label: 'Search', slug: 'guides/site-search' },
+				// 	],
+				// },
+				// {
+				// 	label: 'Reference',
+				// 	items: [
+				// 		{ label: 'Configuration', slug: 'reference/configuration' },
+				// 		{ label: 'Frontmatter', slug: 'reference/frontmatter' },
+				// 	],
+				// },
+				// {
+				// 	label: 'Resources',
+				// 	items: [{ label: 'Plugins', slug: 'resources/plugins' }],
+				// },
 			],
 		}),
 	],
