@@ -17,6 +17,12 @@ export default defineConfig({
 		starlight({
 			plugins: [starlightThemeFlexoki({ accentColor: 'orange' })],
 			title: 'Hồng Nhựt',
+			head: [
+				{
+				  tag: 'script',
+				  content: `try{if(localStorage.getItem('starlight-theme')===null)localStorage.setItem('starlight-theme','dark')}catch(e){}`,
+				},
+			  ],
 			components: {
 				Footer: './src/components/Footer.astro',
 			},
@@ -26,7 +32,10 @@ export default defineConfig({
 					codeFontFamily: '"Iosevka", ui-monospace, monospace',
 				},
 			},
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' },
+				{icon: 'blueSky', label: 'BlueSky', href: 'https://hongnhut.bsky.social'},
+				{icon:'x.com', label: 'X', href: 'https://x.com/nhut_phuonghong'},
+			],
 			sidebar: [
 				{
 					label: 'Start Here',
