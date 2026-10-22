@@ -67,6 +67,24 @@ Các bộ tách từ dựa trên quy tắc sử dụng những quy tắc đượ
 - Khả năng thích ưng với các tập dữ liệu mới hoặc đa dạng còn hạn chế.
 
 ### BPE
+Ở dạng nguyên bản BPE hướng đến việc giảm kích thước các tệp văn bản bằng cách liên tục thay thế cặp byte liền kề xuất hiện thường xuyên nhất bằng một byte duy nhất chưa được sử dụng. Quá trình này giúp nén dữ liệu trong khi vẫn bảo toàn khả năng khôi phục lại văn bản gốc. 
+
+BPE là một thuật toán phân tách văn bản thành các đơn vị từ, hoạt động bằng cách liên tục hợp nhất cặp token liền kề xuất hiện thường xuyên nhất để xây dựng nên một bộ từ vựng. 
+
+Trong mỗi vòng lặp thuật toán sẽ quét tập dữ liệu văn bản để xác định cặp token liền kề xuất hiện với tần suất cao nhất.
+
+Thay thế tất cả các lần xuất hiện của cặp kí hiệu (token) xuất hiện thường xuyên nhất bằng một mã định danh (ID) đại diện mới chưa từng được sử dụng trước đó. Chẳng hạn, nếu các token ban đầu là các kí tự (được ánh xạ ID từ 0 đến 255), thì token mới đầu tiên có thể được gán ID 256. 
+
+Lưu trữ thông tin ánh xạ giữa ID mới và cặp token đã được gộp vào một bảng tra cứu. Bảng này, thường được gọi là từ vựng, giúp theo dõi các quy tắc gộp.
+
+Kích thước từ vựng là một siêu tham số. Ví dụ, mô hình GPT-2 sử dụng kích thước từ vựng là 50.257.
+
+
+Mặc dù có những ưu điểm, phương pháp BPE vẫn tồn tại những hạn chế đáng kể mà người sử dụng cần cân nhắc.
+- Thuật toán này phụ thuộc rất nhiều vào tập dữ liệu huấn luyện để học các quy tắc gộp (merge rules) hiệu quả; nếu tập dữ liệu này không mang tính đại diện hoặc chứa định kiến, kết quả phân tách văn bản có thể không đạt chất lượng tối ưu. 
+- Sau khi huấn luyện xong bộ từ vựng này sẽ trở nên cố định, khiến phương pháp này kém linh hoạt khi áp dụng vào các lĩnh vực hoặc tập từ vựng mới nếu không thực hiện huấn luyện lại (một quy trình vốn tiêu tốn nhiều tài nguyên). 
+- Hiệu suất của BPE cũng rất nhạy cảm với các siêu tham số như kích thước bộ nhớ từ vựng và số lần gộp; do đó, cần phải tinh chỉnh cẩn thận để đạt được kết quả tốt nhất. 
+ 
 ### WordPiece
 ### SentencePiece
 ### Tokenizer cho tiếng Việt
